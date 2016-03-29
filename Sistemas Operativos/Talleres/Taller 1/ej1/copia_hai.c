@@ -14,13 +14,13 @@ int main(int argc, char* argv[]) {
 	
 	printf("%s\n", argv[1]);
 
-	execve('/usr/local/sbin/',argv[1],asd,asd);
-	execve('/usr/local/bin/',argv[1],asd,asd);
-	execve('/usr/sbin/',argv[1],asd,asd);
-	execve('/usr/bin/',argv[1],asd,asd);
-	execve('/sbin/',argv[1],asd,asd);
-	execve('/bin/',argv[1],asd,asd);
-	execve(argv[1],asd,asd);
+	execve("/usr/local/sbin/ls",asd,NULL);
+	execve("/usr/local/bin/ls",asd,NULL);
+	execve("/usr/sbin/ls",asd,NULL);
+	execve("/usr/bin/ls",asd,NULL);
+	execve("/sbin/ls",asd,NULL);
+	execve("/bin/ls",asd,NULL);
+	execve("ls",asd,NULL);
 
 	return 0;
 }

@@ -1,0 +1,151 @@
+execve("./copia_hai", ["./copia_hai", "ls"], [/* 72 vars */]) = 0
+[ Process PID=25007 runs in 32 bit mode. ]
+uname({sys="Linux", node="ws4.labo4", ...}) = 0
+brk(0)                                  = 0x9368000
+brk(0x9368d40)                          = 0x9368d40
+set_thread_area(0xffa8ff10)             = 0
+readlink("/proc/self/exe", "/home/lalvarez/Documentos/facult"..., 4096) = 86
+brk(0x9389d40)                          = 0x9389d40
+brk(0x938a000)                          = 0x938a000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+clone(Process 25008 attached
+child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0) = 25008
+[pid 25008] rt_sigaction(SIGINT, {0x8048e38, [], SA_SIGINFO},  <unfinished ...>
+[pid 25007] rt_sigaction(SIGINT, {0x8048e24, [], SA_SIGINFO},  <unfinished ...>
+[pid 25008] <... rt_sigaction resumed> NULL, 8) = 0
+[pid 25007] <... rt_sigaction resumed> NULL, 8) = 0
+[pid 25008] execve("/usr/local/sbin/ls", ["ls"], [/* 57 vars */] <unfinished ...>
+[pid 25007] execve("/usr/local/sbin/ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */] <unfinished ...>
+[pid 25008] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25007] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25008] execve("/usr/local/bin/ls", ["ls"], [/* 57 vars */] <unfinished ...>
+[pid 25007] execve("/usr/local/bin/ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */] <unfinished ...>
+[pid 25008] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25007] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25008] execve("/usr/sbin/ls", ["ls"], [/* 57 vars */] <unfinished ...>
+[pid 25007] execve("/usr/sbin/ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */] <unfinished ...>
+[pid 25008] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25007] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25008] execve("/usr/bin/ls", ["ls"], [/* 57 vars */] <unfinished ...>
+[pid 25007] execve("/usr/bin/ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */] <unfinished ...>
+[pid 25008] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25007] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25008] execve("/sbin/ls", ["ls"], [/* 57 vars */] <unfinished ...>
+[pid 25007] execve("/sbin/ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */] <unfinished ...>
+[pid 25008] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25007] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25008] execve("/bin/ls", ["ls"], [/* 57 vars */] <unfinished ...>
+[pid 25007] execve("/bin/ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */]) = -1 EFAULT (Bad address)
+[pid 25008] <... execve resumed> )      = 0
+[pid 25007] execve("ls", ["ls", 0x61b0, "U\211\345\203\354\30\307\4$H\346\v\10\350jo"], [/* 57 vars */][ Process PID=25008 runs in 64 bit mode. ]
+ <unfinished ...>
+[pid 25008] brk(0)                      = 0x13cd000
+[pid 25008] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 25008] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca2b2000
+[pid 25008] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 25008] open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid 25008] fstat(3, {st_mode=S_IFREG|0644, st_size=259605, ...}) = 0
+[pid 25008] mmap(NULL, 259605, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb2ca272000
+[pid 25008] close(3)                    = 0
+[pid 25008] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 25008] open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+[pid 25008] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0[\0\0\0\0\0\0"..., 832) = 832
+[pid 25008] fstat(3, {st_mode=S_IFREG|0644, st_size=134296, ...}) = 0
+[pid 25008] mmap(NULL, 2238192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+[pid 25007] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 25008] <... mmap resumed> )        = 0x7fb2c9e6f000
+[pid 25007] exit_group(0)               = ?
+[pid 25008] mprotect(0x7fb2c9e8f000, 2093056, PROT_NONE) = 0
+[pid 25008] mmap(0x7fb2ca08e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000 <unfinished ...>
+[pid 25007] +++ exited with 0 +++
+<... mmap resumed> )                    = 0x7fb2ca08e000
+mmap(0x7fb2ca090000, 5872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca090000
+close(3)                                = 0
+access(0x7fb2ca0ae911, F_OK)            = -1 ENOENT (No such file or directory)
+open(0x7fb2ca2ad2b9, O_RDONLY|O_CLOEXEC) = 3
+read(3, 0x7fffba93d2a0, 832)            = 832
+fstat(3, {...})                         = 0
+mmap(NULL, 2126336, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb2c9c67000
+mprotect(0x7fb2c9c6e000, 2093056, PROT_NONE) = 0
+mmap(0x7fb2c9e6d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fb2c9e6d000
+close(3)                                = 0
+access(0x7fb2ca0ae911, F_OK)            = -1 ENOENT (No such file or directory)
+open(0x7fb2ca2aaa87, O_RDONLY|O_CLOEXEC) = 3
+read(3, 0x7fffba93d270, 832)            = 832
+fstat(3, {...})                         = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca271000
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb2c98a2000
+mprotect(0x7fb2c9a5d000, 2093056, PROT_NONE) = 0
+mmap(0x7fb2c9c5c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7fb2c9c5c000
+mmap(0x7fb2c9c62000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb2c9c62000
+close(3)                                = 0
+access(0x7fb2ca0ae911, F_OK)            = -1 ENOENT (No such file or directory)
+open(0x7fb2ca295f15, O_RDONLY|O_CLOEXEC) = 3
+read(3, 0x7fffba93d130, 832)            = 832
+fstat(3, {...})                         = 0
+mmap(NULL, 2347200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb2c9664000
+mprotect(0x7fb2c96a1000, 2093056, PROT_NONE) = 0
+mmap(0x7fb2c98a0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3c000) = 0x7fb2c98a0000
+close(3)                                = 0
+access(0x7fb2ca0ae911, F_OK)            = -1 ENOENT (No such file or directory)
+open(0x7fb2ca2a7eca, O_RDONLY|O_CLOEXEC) = 3
+read(3, 0x7fffba93d100, 832)            = 832
+fstat(3, {...})                         = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb2c9460000
+mprotect(0x7fb2c9463000, 2093056, PROT_NONE) = 0
+mmap(0x7fb2c9662000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb2c9662000
+close(3)                                = 0
+access(0x7fb2ca0ae911, F_OK)            = -1 ENOENT (No such file or directory)
+open(0x7fb2ca2ac087, O_RDONLY|O_CLOEXEC) = 3
+read(3, 0x7fffba93d0a0, 832)            = 832
+fstat(3, {...})                         = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca270000
+mmap(NULL, 2113760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb2c925b000
+mprotect(0x7fb2c925f000, 2093056, PROT_NONE) = 0
+mmap(0x7fb2c945e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fb2c945e000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca26f000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca26d000
+arch_prctl(ARCH_SET_FS, 0x7fb2ca26d840) = 0
+mprotect(0x7fb2c9c5c000, 16384, PROT_READ) = 0
+mprotect(0x7fb2c945e000, 4096, PROT_READ) = 0
+mprotect(0x7fb2c9662000, 4096, PROT_READ) = 0
+mprotect(0x7fb2c98a0000, 4096, PROT_READ) = 0
+mprotect(0x7fb2c9e6d000, 4096, PROT_READ) = 0
+mprotect(0x7fb2ca08e000, 4096, PROT_READ) = 0
+mprotect(0x619000, 4096, PROT_READ)     = 0
+mprotect(0x7fb2ca2b4000, 4096, PROT_READ) = 0
+munmap(0x7fb2ca272000, 259605)          = 0
+statfs(0x7fb2c9e87153, 0x7fffba93d990)  = -1 ENOENT (No such file or directory)
+statfs(0x7fb2c9e8715a, 0x7fffba93d990)  = -1 ENOENT (No such file or directory)
+brk(0)                                  = 0x13cd000
+brk(0x13ee000)                          = 0x13ee000
+open(0x7fb2c9e87137, O_RDONLY)          = 3
+fstat(3, {...})                         = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca2b1000
+read(3, 0x7fb2ca2b1000, 1024)           = 383
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7fb2ca2b1000, 4096)            = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffba93d5e0) = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(1, TIOCGWINSZ, 0x7fffba93d6b0)    = -1 ENOTTY (Inappropriate ioctl for device)
+openat(AT_FDCWD, 0x13d1c20, O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, 0x13d1c70, 32768)           = 328
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+fstat(1, {...})                         = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2ca16d000
+write(1, 0x7fb2ca16d000, 107Makefile
+copia_hai
+copia_hai.c
+copia_hai.o
+correr.sh
+ejemplo_sigaction
+salida_copia_hai_ls
+salida_hai64_ls
+)           = 107
+close(1)                                = 0
+munmap(0x7fb2ca16d000, 1048576)         = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

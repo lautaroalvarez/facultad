@@ -1,0 +1,300 @@
+execve("../hai64", ["../hai64", "ls"], [/* 72 vars */]) = 0
+uname({sys="Linux", node="ws4.labo4", ...}) = 0
+brk(0)                                  = 0x2512000
+brk(0x25131c0)                          = 0x25131c0
+arch_prctl(ARCH_SET_FS, 0x2512880)      = 0
+readlink("/proc/self/exe", "/home/lalvarez/Documentos/facult"..., 4096) = 78
+brk(0x25341c0)                          = 0x25341c0
+brk(0x2535000)                          = 0x2535000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+clone(Process 24991 attached
+child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x2512b50) = 24991
+[pid 24991] rt_sigaction(SIGURG, {0x40105e, [URG], SA_RESTORER|SA_RESTART, 0x406bf0},  <unfinished ...>
+[pid 24990] rt_sigaction(SIGINT, {0x40108e, [INT], SA_RESTORER|SA_RESTART, 0x406bf0},  <unfinished ...>
+[pid 24991] <... rt_sigaction resumed> {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] <... rt_sigaction resumed> {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+[pid 24990] rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 24990] nanosleep({1, 0}, 0x7fff9641dc10) = 0
+[pid 24990] write(1, "sup!\n", 5sup!
+)       = 5
+[pid 24990] kill(24991, SIGURG <unfinished ...>
+[pid 24991] --- SIGURG {si_signo=SIGURG, si_code=SI_USER, si_pid=24990, si_uid=24941} ---
+[pid 24990] <... kill resumed> )        = 0
+[pid 24991] write(1, "ya va!\n", 7ya va!
+)     = 7
+[pid 24990] rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+[pid 24991] rt_sigreturn()              = 0
+[pid 24990] <... rt_sigprocmask resumed> [], 8) = 0
+[pid 24990] rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 24990] nanosleep({1, 0}, 0x7fff9641dc10) = 0
+[pid 24990] write(1, "sup!\n", 5sup!
+)       = 5
+[pid 24990] kill(24991, SIGURG <unfinished ...>
+[pid 24991] --- SIGURG {si_signo=SIGURG, si_code=SI_USER, si_pid=24990, si_uid=24941} ---
+[pid 24990] <... kill resumed> )        = 0
+[pid 24991] write(1, "ya va!\n", 7ya va!
+)     = 7
+[pid 24990] rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+[pid 24991] rt_sigreturn()              = 1
+[pid 24990] <... rt_sigprocmask resumed> [], 8) = 0
+[pid 24990] rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 24990] nanosleep({1, 0}, 0x7fff9641dc10) = 0
+[pid 24990] write(1, "sup!\n", 5sup!
+)       = 5
+[pid 24990] kill(24991, SIGURG <unfinished ...>
+[pid 24991] --- SIGURG {si_signo=SIGURG, si_code=SI_USER, si_pid=24990, si_uid=24941} ---
+[pid 24990] <... kill resumed> )        = 0
+[pid 24991] write(1, "ya va!\n", 7ya va!
+)     = 7
+[pid 24990] rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+[pid 24991] rt_sigreturn()              = 2
+[pid 24990] <... rt_sigprocmask resumed> [], 8) = 0
+[pid 24990] rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 24990] nanosleep({1, 0}, 0x7fff9641dc10) = 0
+[pid 24990] write(1, "sup!\n", 5sup!
+)       = 5
+[pid 24990] kill(24991, SIGURG <unfinished ...>
+[pid 24991] --- SIGURG {si_signo=SIGURG, si_code=SI_USER, si_pid=24990, si_uid=24941} ---
+[pid 24990] <... kill resumed> )        = 0
+[pid 24991] write(1, "ya va!\n", 7ya va!
+)     = 7
+[pid 24990] rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+[pid 24991] rt_sigreturn()              = 3
+[pid 24990] <... rt_sigprocmask resumed> [], 8) = 0
+[pid 24990] rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+[pid 24990] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 24990] nanosleep({1, 0}, 0x7fff9641dc10) = 0
+[pid 24990] write(1, "sup!\n", 5sup!
+)       = 5
+[pid 24990] kill(24991, SIGURG <unfinished ...>
+[pid 24991] --- SIGURG {si_signo=SIGURG, si_code=SI_USER, si_pid=24990, si_uid=24941} ---
+[pid 24990] <... kill resumed> )        = 0
+[pid 24991] write(1, "ya va!\n", 7ya va!
+)     = 7
+[pid 24990] rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+[pid 24991] rt_sigreturn()              = 4
+[pid 24990] <... rt_sigprocmask resumed> [], 8) = 0
+[pid 24991] getppid()                   = 24990
+[pid 24991] kill(24990, SIGINT <unfinished ...>
+[pid 24990] rt_sigaction(SIGCHLD, NULL,  <unfinished ...>
+[pid 24991] <... kill resumed> )        = 0
+[pid 24991] execve("/opt/intel/composer_xe_2011_sp1.7.256/bin/intel64/ls", ["ls"], [/* 72 vars */] <unfinished ...>
+[pid 24990] <... rt_sigaction resumed> {SIG_DFL, [], 0}, 8) = 0
+[pid 24991] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 24990] --- SIGINT {si_signo=SIGINT, si_code=SI_USER, si_pid=24991, si_uid=24941} ---
+[pid 24991] execve("/usr/local/sbin/ls", ["ls"], [/* 72 vars */] <unfinished ...>
+[pid 24990] wait4(-1,  <unfinished ...>
+[pid 24991] <... execve resumed> )      = -1 ENOENT (No such file or directory)
+[pid 24991] execve("/usr/local/bin/ls", ["ls"], [/* 72 vars */]) = -1 ENOENT (No such file or directory)
+[pid 24991] execve("/usr/sbin/ls", ["ls"], [/* 72 vars */]) = -1 ENOENT (No such file or directory)
+[pid 24991] execve("/usr/bin/ls", ["ls"], [/* 72 vars */]) = -1 ENOENT (No such file or directory)
+[pid 24991] execve("/sbin/ls", ["ls"], [/* 72 vars */]) = -1 ENOENT (No such file or directory)
+[pid 24991] execve("/bin/ls", ["ls"], [/* 72 vars */]) = 0
+[pid 24991] brk(0)                      = 0x8d3000
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea284be000
+[pid 24991] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64", {st_mode=S_IFDIR|0755, st_size=8192, ...}) = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/tls/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/tls/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/tls/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/tls", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/x86_64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/x86_64", 0x7fff3a4fe4b0) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] stat("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+[pid 24991] open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=259605, ...}) = 0
+[pid 24991] mmap(NULL, 259605, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea2847e000
+[pid 24991] close(3)                    = 0
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0[\0\0\0\0\0\0"..., 832) = 832
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=134296, ...}) = 0
+[pid 24991] mmap(NULL, 2238192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea2807b000
+[pid 24991] mprotect(0x7fea2809b000, 2093056, PROT_NONE) = 0
+[pid 24991] mmap(0x7fea2829a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7fea2829a000
+[pid 24991] mmap(0x7fea2829c000, 5872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fea2829c000
+[pid 24991] close(3)                    = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/libacl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\34\0\0\0\0\0\0"..., 832) = 832
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=31168, ...}) = 0
+[pid 24991] mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea2847d000
+[pid 24991] mmap(NULL, 2126336, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea27e73000
+[pid 24991] mprotect(0x7fea27e7a000, 2093056, PROT_NONE) = 0
+[pid 24991] mmap(0x7fea28079000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fea28079000
+[pid 24991] close(3)                    = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+[pid 24991] fstat(3, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+[pid 24991] mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea27aae000
+[pid 24991] mprotect(0x7fea27c69000, 2093056, PROT_NONE) = 0
+[pid 24991] mmap(0x7fea27e68000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7fea27e68000
+[pid 24991] mmap(0x7fea27e6e000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fea27e6e000
+[pid 24991] close(3)                    = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\27\0\0\0\0\0\0"..., 832) = 832
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=252032, ...}) = 0
+[pid 24991] mmap(NULL, 2347200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea27870000
+[pid 24991] mprotect(0x7fea278ad000, 2093056, PROT_NONE) = 0
+[pid 24991] mmap(0x7fea27aac000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3c000) = 0x7fea27aac000
+[pid 24991] close(3)                    = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+[pid 24991] mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea2847c000
+[pid 24991] mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea2766c000
+[pid 24991] mprotect(0x7fea2766f000, 2093056, PROT_NONE) = 0
+[pid 24991] mmap(0x7fea2786e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fea2786e000
+[pid 24991] close(3)                    = 0
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/compiler/lib/intel64/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/../compiler/lib/intel64/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/ipp/lib/intel64/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mkl/lib/intel64/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/tbb/lib/intel64//cc4.1.0_libc2.4_kernel2.6.16.21/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/debugger/lib/intel64/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/opt/intel/composer_xe_2011_sp1.7.256/mpirt/lib/intel64/libattr.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid 24991] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 24991] open("/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\20\0\0\0\0\0\0"..., 832) = 832
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=18624, ...}) = 0
+[pid 24991] mmap(NULL, 2113760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea27467000
+[pid 24991] mprotect(0x7fea2746b000, 2093056, PROT_NONE) = 0
+[pid 24991] mmap(0x7fea2766a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fea2766a000
+[pid 24991] close(3)                    = 0
+[pid 24991] mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea2847b000
+[pid 24991] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea28479000
+[pid 24991] arch_prctl(ARCH_SET_FS, 0x7fea28479840) = 0
+[pid 24991] mprotect(0x7fea27e68000, 16384, PROT_READ) = 0
+[pid 24991] mprotect(0x7fea2766a000, 4096, PROT_READ) = 0
+[pid 24991] mprotect(0x7fea2786e000, 4096, PROT_READ) = 0
+[pid 24991] mprotect(0x7fea27aac000, 4096, PROT_READ) = 0
+[pid 24991] mprotect(0x7fea28079000, 4096, PROT_READ) = 0
+[pid 24991] mprotect(0x7fea2829a000, 4096, PROT_READ) = 0
+[pid 24991] mprotect(0x619000, 4096, PROT_READ) = 0
+[pid 24991] mprotect(0x7fea284c0000, 4096, PROT_READ) = 0
+[pid 24991] munmap(0x7fea2847e000, 259605) = 0
+[pid 24991] statfs("/sys/fs/selinux", 0x7fff3a4fecc0) = -1 ENOENT (No such file or directory)
+[pid 24991] statfs("/selinux", 0x7fff3a4fecc0) = -1 ENOENT (No such file or directory)
+[pid 24991] brk(0)                      = 0x8d3000
+[pid 24991] brk(0x8f4000)               = 0x8f4000
+[pid 24991] open("/proc/filesystems", O_RDONLY) = 3
+[pid 24991] fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+[pid 24991] mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea284bd000
+[pid 24991] read(3, "nodev\tsysfs\nnodev\trootfs\nnodev\tr"..., 1024) = 383
+[pid 24991] read(3, "", 1024)           = 0
+[pid 24991] close(3)                    = 0
+[pid 24991] munmap(0x7fea284bd000, 4096) = 0
+[pid 24991] open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+[pid 24991] fstat(3, {st_mode=S_IFREG|0644, st_size=10870128, ...}) = 0
+[pid 24991] mmap(NULL, 10870128, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea26a09000
+[pid 24991] close(3)                    = 0
+[pid 24991] ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fff3a4fe910) = -1 ENOTTY (Inappropriate ioctl for device)
+[pid 24991] ioctl(1, TIOCGWINSZ, 0x7fff3a4fe9e0) = -1 ENOTTY (Inappropriate ioctl for device)
+[pid 24991] openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+[pid 24991] getdents(3, /* 10 entries */, 32768) = 328
+[pid 24991] getdents(3, /* 0 entries */, 32768) = 0
+[pid 24991] close(3)                    = 0
+[pid 24991] fstat(1, {st_mode=S_IFREG|0644, st_size=26550, ...}) = 0
+[pid 24991] mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea28379000
+[pid 24991] write(1, "copia_hai\ncopia_hai.c\ncopia_hai."..., 107copia_hai
+copia_hai.c
+copia_hai.o
+correr.sh
+ejemplo_sigaction
+Makefile
+salida_copia_hai_ls
+salida_hai64_ls
+) = 107
+[pid 24991] close(1)                    = 0
+[pid 24991] munmap(0x7fea28379000, 1048576) = 0
+[pid 24991] close(2)                    = 0
+[pid 24991] exit_group(0)               = ?
+[pid 24991] +++ exited with 0 +++
+<... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 24991
+exit_group(0)                           = ?
++++ exited with 0 +++

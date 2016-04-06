@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
+#include <signal.h>
 
 void sigint_hijo() {
 	printf("sigurg del hijo\n");
@@ -26,7 +27,7 @@ int main(int argc, char* argv[]) {
 		sigemptyset(&sa_padre.sa_mask);
 		sa_padre.sa_sigaction = sigint_padre;
 
-		if (rt_sigaction(SIGINT, &sa_padre, NULL) == -1)
+		if (sigaction(SIGINT, &sa_padre, NULL) == -1)
 			perror("error en sigaction sigint padre");
 		//execvp(argv[1], argv+1);
 		/* Si vuelve de exec() hubo un error */
@@ -38,7 +39,7 @@ int main(int argc, char* argv[]) {
 		sigemptyset(&sa_hijo.sa_mask);
 		sa_hijo.sa_sigaction = sigint_hijo;
 		
-		if (rt_sigaction(SIGINT, &sa_hijo, NULL) == -1)
+		if (sigaction(SIGINT, &sa_hijo, NULL) == -1)
 			perror("error en sigaction sigint hijo");
 		//while(1) {
 		//if (wait(&status) < 0) { perror("waitpid"); break; }

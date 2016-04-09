@@ -23,11 +23,11 @@ int main(int argc, char* argv[]) {
 	if (child == 0) {
 		/* Sólo se ejecuta en el Hijo */
 		struct sigaction sa_padre;
-		sa_padre.sa_flags = SA_SIGINFO;
+		sa_padre.sa_flags = SA_RESTORER|SA_RESTART;
 		sigemptyset(&sa_padre.sa_mask);
 		sa_padre.sa_sigaction = sigint_padre;
 
-		if (sigaction(SIGINT, &sa_padre, NULL) == -1)
+		if (sigaction(SIGURG, &sa_padre, NULL) == -1)
 			perror("error en sigaction sigint padre");
 		//execvp(argv[1], argv+1);
 		/* Si vuelve de exec() hubo un error */
@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 	} else {
 		/* Sólo se ejecuta en el Padre */
 		struct sigaction sa_hijo;
-		sa_hijo.sa_flags = SA_SIGINFO;
+		sa_hijo.sa_flags = SA_RESTORER|SA_RESTART;
 		sigemptyset(&sa_hijo.sa_mask);
 		sa_hijo.sa_sigaction = sigint_hijo;
 		

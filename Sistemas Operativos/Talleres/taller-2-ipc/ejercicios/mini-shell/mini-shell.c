@@ -46,6 +46,7 @@ int run(char *program_name[], char **program_argv[], unsigned int count) {
         }*/
     } else {
         printf("Soy el padre\n");
+        dup2(1, pipes[count-1][0]);
         if (read(pipes[count-1][0], buf, 1024) < 0) {
             perror("leyendo datos");
         }
@@ -73,7 +74,7 @@ int main(int argc, char* argv[]) {
         awk_argv,
     };
 
-    unsigned int count = 2;
+    unsigned int count = 1;
 
     int status = run(program_name, program_argv, count);
 

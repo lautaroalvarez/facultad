@@ -13,7 +13,7 @@ int run(char *program_name[], char **program_argv[], unsigned int count) {
     int pipes[count][2];
     char buf[1024];
     //char buf_sal[1024];
-    char *newenviron[] = { NULL };
+    //char *newenviron[] = { NULL };
     //int haydatos = 0;
     //int status = 0;
     
@@ -40,9 +40,9 @@ int run(char *program_name[], char **program_argv[], unsigned int count) {
             }
         }
         close(pipes[num_proc][0]);
-        close(0);
+        //close(0);
         if (num_proc > 0) {
-            dup(pipes[num_proc-1][0]);
+            dup2(pipes[num_proc-1][0], 0);
             //if (read(pipes[num_proc-1][0], buf, 1024) < 0) {
             //    perror("leyendo datos");
             //}
@@ -69,7 +69,13 @@ int run(char *program_name[], char **program_argv[], unsigned int count) {
         //printf("%s\n", program_argv[num_proc][1]);
         dup2(pipes[num_proc][1], 1);
         //perror("antes de ejecutar");
-        execve(program_name[num_proc], program_argv[num_proc], newenviron);
+        printf("asd\n");
+        execvp(program_name[num_proc], program_argv[num_proc]);
+        if (num_proc > 0) {
+            close(pipes[num_proc-1][0]);
+            close(0);
+        }
+        close(pipes[num_proc][1]);
         //perror("despues de ejecutar");
         /*if (write(pipes[num_proc][1], buf_sal, sizeof(buf_sal)) < 0) {
             perror("escribiendo datos");
@@ -81,13 +87,13 @@ int run(char *program_name[], char **program_argv[], unsigned int count) {
         }
         close(pipes[count-1][1]);
 
-        //printf("Mi ultimo hijo: %d.\n", child[count-1]);
-        //dup2(pipes[count-1][0], 1);
+        //dup2(1, pipes[count-1][0]);
         //waitpid(child[count-1], &status, 1);
         if (read(pipes[count-1][0], buf, 1024) < 0) {
             perror("leyendo datos");
         }
         printf("%s", buf);
+        close(pipes[count-1][0]);
         //perror("Soy el padre saliendo");
     }
 

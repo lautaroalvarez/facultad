@@ -1,0 +1,7 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Ejercicio 2}{4}{section.1}
+\contentsline {section}{\numberline {2}Ejercicio 3.}{6}{section.2}
+\contentsline {section}{\numberline {3}Ejercicio 4.}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ejercicio 5}{8}{subsection.3.1}
+\contentsline {section}{\numberline {4}Ejercicio 7}{13}{section.4}
+\contentsline {section}{\numberline {5}Ejercicio 8}{15}{section.5}

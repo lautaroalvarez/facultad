@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kt}{int} \PY{n}{SchedRR}\PY{o}{:}\PY{o}{:}\PY{n}{tick}\PY{p}{(}\PY{k+kt}{int} \PY{n}{id\PYZus{}cpu}\PY{p}{,} \PY{k}{const} \PY{k}{enum} \PY{n}{Motivo} \PY{n}{m}\PY{p}{)} \PY{p}{\PYZob{}}
+    \PY{k+kt}{int} \PY{n}{pid\PYZus{}ret} \PY{o}{=} \PY{n}{IDLE\PYZus{}TASK}\PY{p}{;}
+    \PY{k+kt}{int} \PY{n}{pid\PYZus{}c} \PY{o}{=} \PY{n}{current\PYZus{}pid}\PY{p}{(}\PY{n}{id\PYZus{}cpu}\PY{p}{)}\PY{p}{;}
+    \PY{k}{if} \PY{p}{(}\PY{n}{m} \PY{o}{=}\PY{o}{=} \PY{n}{TICK} \PY{o}{\PYZam{}}\PY{o}{\PYZam{}} \PY{n}{pid\PYZus{}c} \PY{o}{!}\PY{o}{=} \PY{n}{IDLE\PYZus{}TASK}\PY{p}{)} \PY{p}{\PYZob{}}
+        \PY{n}{cpu\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{o}{\PYZhy{}}\PY{p}{;}
+        \PY{k}{if} \PY{p}{(}\PY{n}{cpu\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]} \PY{o}{=}\PY{o}{=} \PY{l+m+mi}{0} \PY{o}{\PYZam{}}\PY{o}{\PYZam{}} \PY{o}{!}\PY{n}{q}\PY{p}{.}\PY{n}{empty}\PY{p}{(}\PY{p}{)}\PY{p}{)} \PY{p}{\PYZob{}}
+            \PY{n}{q}\PY{p}{.}\PY{n}{push}\PY{p}{(}\PY{n}{pid\PYZus{}c}\PY{p}{)}\PY{p}{;}
+            \PY{n}{pid\PYZus{}ret} \PY{o}{=} \PY{n}{q}\PY{p}{.}\PY{n}{front}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+            \PY{n}{q}\PY{p}{.}\PY{n}{pop}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+            \PY{n}{cpu\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]} \PY{o}{=} \PY{n}{def\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]}\PY{p}{;}
+        \PY{p}{\PYZcb{}} \PY{k}{else} \PY{p}{\PYZob{}}
+            \PY{n}{pid\PYZus{}ret} \PY{o}{=} \PY{n}{pid\PYZus{}c}\PY{p}{;}
+            \PY{k}{if} \PY{p}{(}\PY{o}{!}\PY{n}{cpu\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]}\PY{p}{)} \PY{n}{cpu\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]} \PY{o}{=} \PY{n}{def\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]}\PY{p}{;}
+        \PY{p}{\PYZcb{}}
+    \PY{p}{\PYZcb{}} \PY{k}{else} \PY{p}{\PYZob{}}
+        \PY{k}{if} \PY{p}{(}\PY{o}{!}\PY{n}{q}\PY{p}{.}\PY{n}{empty}\PY{p}{(}\PY{p}{)}\PY{p}{)} \PY{p}{\PYZob{}}
+            \PY{n}{pid\PYZus{}ret} \PY{o}{=} \PY{n}{q}\PY{p}{.}\PY{n}{front}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+            \PY{n}{q}\PY{p}{.}\PY{n}{pop}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+            \PY{n}{cpu\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]} \PY{o}{=} \PY{n}{def\PYZus{}quantum}\PY{p}{[}\PY{n}{id\PYZus{}cpu}\PY{p}{]}\PY{p}{;}
+        \PY{p}{\PYZcb{}}
+    \PY{p}{\PYZcb{}}
+    \PY{k}{return} \PY{n}{pid\PYZus{}ret}\PY{p}{;}
+\PY{p}{\PYZcb{}}
+\end{Verbatim}

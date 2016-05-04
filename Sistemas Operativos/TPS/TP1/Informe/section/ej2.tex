@@ -1,0 +1,47 @@
+\section{Ejercicio 2}
+Las tareas que ejecuta el grupo de competencia de Data Mining se pueden escribir así:\\
+TaskCPU 500\\
+TaskConsola 10 1 4\\
+TaskConsola 20 1 4\\
+TaskConsola 30 1 4\\
+
+La primer tarea simula el algoritmo que usa intensivamente la cpu, las otras tres simulan a los tres usuarios que se conectan al servidor.
+La simulación de las ejecuciones de estas tareas\\
+para uno, dos y cuatro núcleos con un scheduler FCFS, son las siguientes respectivamente.\\
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/ej2_1core.png}
+  \caption{Ejecución con un núcleo}
+  \label{fig:imagen2_1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/ej2_2cores.png}
+  \caption{Ejecución con dos núcleos}
+  \label{fig:imagen2_2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/ej2_4cores.png}
+  \caption{Ejecución con cuatro núcleos}
+  \label{fig:imagen2_4}
+\end{figure}
+{\bf Latencias de las tareas:}\\\\
+Con un núcleo:\\
+Primera tarea: 5\\
+Segunda tarea: 510\\
+Tercera tarea: 550\\
+Cuarta tarea: 620\\\\
+Con dos núcleos:\\
+Primera tarea: 5\\
+Segunda tarea: 5\\
+Tercera tarea: 42\\
+Cuarta tarea: 112\\\\
+Con cuatro núcleos:\\
+Primera tarea: 5\\
+Segunda tarea: 5\\
+Tercera tarea: 5\\
+Cuarta tarea: 5\\\\
+En base a los gráficos obtenidos y los cálculos realizados, podemos concluir que First Come First Served no es una buena política de scheduling para ejecutar tareas interactivas.  
+

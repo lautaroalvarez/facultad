@@ -1,0 +1,25 @@
+\section{Ejercicio 4.}
+
+Vamos a explicar brevemente la implementacion del sched\_rr. Para la parte privada mantuvimos dos vectores, donde el índice marca un cpu y el valor marca, en uno de los vectores los ticks restantes y en el otro los ticks por defecto. Por otro lado tenemos una cola de tareas a ejecutar. Además si una tarea esta ejecutandosé, bloqueandosé o fue terminada esta no va a estar en la misma. \\
+El constructor, destructor, unblock y load de sched\_rr son tan simples que no hace falta explicación. Veamos la función tick.
+
+\input{code/schedrr.tex}
+
+Como se ve lo que hacemos es fijarnos si actualmente esta corriendo una tarea idle o pidió un block/exit. En tal caso lo único que hace falta es intentar cargar una nueva tarea al cpu, de no poder hacerlo, porque no hay tareas en la cola, dejamos la idle. Si era un tick y además no era la tarea idle, vemos si fue el ultimo tick, en tal si hay álguna tarea en la cola de procesos, la cargamos, y sino devolvemos la idle.
+
+Luego para probar que andaba corrimos el scheduler con el loteEj5.tsk que es
+
+\begin{Verbatim}
+TaskBatch 12 4
+TaskCPU   34
+TaskBatch 25 3
+TaskCPU   8
+\end{Verbatim}
+
+Obteniendo
+
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.55]{images/imgEjercicio4}}
+    \caption{Round Robin Lote4.}
+\end{figure}
+

@@ -1,0 +1,6 @@
+@0:
+TaskCPU 200
+@0:
+TaskAlterno 4 4 20 3 30 2 50
+@50:
+TaskAlterno 70 4 50

@@ -1,0 +1,11 @@
+\section{Ejercicio 6}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/imagen6.png}
+  %\caption{}
+  \label{fig:imagen6}
+\end{figure}
+El gráfico representa la ejecución del lote del ejercicio 5 con un scheduler FCFS. En este caso las tareas interactivas se ejecutan recién cuando las demás tareas terminaron. Para que esto no sucediera, se tendrían que haber cargado antes que las demás tareas.
+Algo similar sucedía con Round Robin con quantum 50. Pero con quantum 2, las tareas interactivas podían terminar de ejecutarse rápidamente. Entonces Round Robin permite
+que todas las tareas puedan ejecutarse sin necesidad de que las demás terminen. En cambio en FCFS las tareas se ejecutan en orden, por lo que si una tarea de larga duración se ejecuta primero,
+las demás pueden demorar mucho en empezar a ejecutarse. Esto es un problema especialmente para las tareas interactivas.

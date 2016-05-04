@@ -1,0 +1,109 @@
+\section{Ejercicio 5}
+%\newpage
+En este ejercicio se comparan algunas métricas del algoritmo de scheduling Round Robin con un sólo núcleo con distintos valores de quantum, ejecutando siempre el mismo lote:\\\\
+TaskCPU 70\\
+TaskCPU 70\\
+TaskCPU 70\\
+TaskConsola 3 3 3\\
+TaskConsola 3 3 3\\
+
+{\bf En la primer figura quantum = 2.}\\\\
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/imagen52.png}
+  %\caption{}
+  \label{fig:imagen5_2}
+\end{figure}
+
+{\bf Métricas de las tareas}\\\\
+Tarea 1\\
+Tiempo de espera: 376\\
+Latencia: 2\\
+Tiempo de ejecución: 446\\\\
+Tarea 2\\
+Tiempo de espera: 379\\
+Latencia: 6\\
+Tiempo de ejecución: 449\\\\
+Tarea 3\\
+Tiempo de espera: 382\\
+Latencia: 10\\
+Tiempo de ejecución: 452\\\\
+Tarea 4\\
+Tiempo de espera: 55\\
+Latencia: 14\\
+Tiempo de ejecución: 68\\\\
+Tarea 5\\
+Tiempo de espera: 58\\
+Latencia: 17\\
+Tiempo de ejecución: 71\\\\\\\\\\
+
+{\bf Con quantum = 10}\\\\
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/imagen510.png}
+  %\caption{}
+  \label{fig:imagen5_10}
+\end{figure}
+
+{\bf Métricas de las tareas}\\\\
+Tarea 1\\
+Tiempo de espera: 209\\
+Latencia: 2\\
+Tiempo de ejecución: 279\\\\
+Tarea 2\\
+Tiempo de espera: 212\\
+Latencia: 14\\
+Tiempo de ejecución: 282\\\\
+Tarea 3\\
+Tiempo de espera: 215\\
+Latencia: 26\\
+Tiempo de ejecución: 285\\\\
+Tarea 4\\
+Tiempo de espera: 162\\
+Latencia: 38\\
+Tiempo de ejecución: 175\\\\
+Tarea 5\\
+Tiempo de espera: 165\\
+Latencia: 41\\
+Tiempo de ejecución: 178\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+{\bf Con quantum = 50}\\\\
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\textwidth]{images/imagen550.png}
+  %\caption{}
+  \label{fig:imagen5_50}
+\end{figure}
+
+{\bf Métricas de las tareas}\\\\
+Tarea 1\\
+Tiempo de espera: 115\\
+Latencia: 2\\
+Tiempo de ejecución: 185\\\\
+Tarea 2\\
+Tiempo de espera: 137\\
+Latencia: 54\\
+Tiempo de ejecución: 207\\\\
+Tarea 3\\
+Tiempo de espera: 159\\
+Latencia: 106\\
+Tiempo de ejecución: 229\\\\
+Tarea 4\\
+Tiempo de espera: 233\\
+Latencia: 158\\
+Tiempo de ejecución: 246\\\\
+Tarea 5\\
+Tiempo de espera: 236\\
+Latencia: 161\\
+Tiempo de ejecución: 249\\\\
+Con quantum = 2 todas las tareas pueden comenzar a ejecutarse rápidamente, por eso las latencias son bajas. En cuanto al tiempo de ejecución, son elevados para las tareas 1 a 3. La cpu debe
+realizar un cambio de contexto, que consume 2 ciclos, cada vez vez que una tarea pierde su turno, es decir cada 2 ciclos. Esto genera que el tiempo de espera de las tareas 1 a 3 sea elevado, y
+por esta razón los tiempos de ejecución de dichas tareas es también elevado. En el caso de las tareas 4 y 5, no realizan muchas llamadas bloqueantes, y el tiempo de bloqueo es corto. Esto genera que el tiempo de ejecución 
+y el tiempo de espera de estas tareas
+no sea elevado.\\
+
+Con quantum = 10, las tres métricas con similares para todas las tareas. Esto no es conveniente para las tareas 4 y 5, ya que son interactivas y en cada bloqueo deben pasar
+más de 30 ciclos para volver a ejecutarse. De hecho con este quantum, el tiempo de ejecución de estas tareas es peor que con quantum 2.\\
+
+Con quantum = 50, el timepo de ejecución de las tareas 1 a 3 es menor que con los otros valores de quantum. Esto se debe a que se realizan pocos desalojos de tareas y por lo tanto se pierde menos tiempo en hacer cambios de contexto.
+Las tareas 4 y 5 no se benefician tanto, ya que sus latencias son elevadas y al igual que con quantum 10 deben pasar más de 30 ciclos para ejecutarse, y por lo tanto, sus tiempos de espera y ejecución también lo son.

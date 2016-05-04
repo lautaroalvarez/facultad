@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kt}{void} \PY{n+nf}{TaskConsola}\PY{p}{(}\PY{k+kt}{int} \PY{n}{pid}\PY{p}{,} \PY{n}{vector}\PY{o}{\PYZlt{}}\PY{k+kt}{int}\PY{o}{\PYZgt{}} \PY{n}{params}\PY{p}{)} \PY{p}{\PYZob{}}
+    \PY{k+kt}{size\PYZus{}t} \PY{n}{n} \PY{o}{=} \PY{n}{params}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{;}
+    \PY{k+kt}{size\PYZus{}t} \PY{n}{bmin} \PY{o}{=} \PY{n}{params}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{;}
+    \PY{k+kt}{size\PYZus{}t} \PY{n}{bmax} \PY{o}{=} \PY{n}{params}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{;}
+    \PY{n}{std}\PY{o}{:}\PY{o}{:}\PY{n}{random\PYZus{}device} \PY{n}{rd}\PY{p}{;}
+    \PY{n}{std}\PY{o}{:}\PY{o}{:}\PY{n}{mt19937} \PY{n}{mt}\PY{p}{(}\PY{n}{rd}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{;} \PY{c+c1}{//Distribuye en el rango pedido}
+    \PY{n}{std}\PY{o}{:}\PY{o}{:}\PY{n}{uniform\PYZus{}int\PYZus{}distribution}\PY{o}{\PYZlt{}}\PY{k+kt}{int}\PY{o}{\PYZgt{}} \PY{n}{dist}\PY{p}{(}\PY{n}{bmin}\PY{p}{,} \PY{n}{bmax}\PY{p}{)}\PY{p}{;}
+    \PY{k}{for} \PY{p}{(}\PY{k+kt}{size\PYZus{}t} \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}\PY{p}{;} \PY{n}{i} \PY{o}{\PYZlt{}} \PY{n}{n}\PY{p}{;} \PY{n}{i}\PY{o}{+}\PY{o}{+}\PY{p}{)} \PY{p}{\PYZob{}}
+        \PY{n}{uso\PYZus{}IO}\PY{p}{(}\PY{n}{pid}\PY{p}{,} \PY{n}{dist}\PY{p}{(}\PY{n}{mt}\PY{p}{)}\PY{p}{)}\PY{p}{;}
+    \PY{p}{\PYZcb{}}
+\PY{p}{\PYZcb{}}
+\end{Verbatim}

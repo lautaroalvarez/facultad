@@ -1,0 +1,44 @@
+\documentclass[a4paper,10pt]{article}
+% Idioma
+\usepackage[spanish]{babel}
+% La geometría del documento
+\usepackage[paper=a4paper, hmargin=1.5cm, bottom=1.5cm, top=3.0cm]{geometry}
+% Necesario para cosas de encoding
+\usepackage[T1]{fontenc}
+% Codificacion utf-8
+\usepackage[utf8]{inputenc}
+% Hyperlinking
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
+% tipografia
+\usepackage{charter}  
+% Caratula
+\usepackage{otros/caratula}
+% Graficos
+\usepackage{graphicx}
+% Footnote refs
+\usepackage{scrextend}
+% Description enumerate itemize
+\usepackage{enumitem}
+\setlist{noitemsep}
+% Tabular
+\usepackage{mathtools}
+\usepackage{array}
+% Fancyhdr
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+% Para el número de la última página
+\usepackage{lastpage}
+% barriers
+\usepackage{placeins}
+
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\fancyhf{}
+\lhead{Trabajo Práctico I - Schedulling}
+\rhead{} % nombre grupo
+\renewcommand{\footrulewidth}{0.4pt}
+\rfoot{\thepage /\pageref{LastPage}}
+\lfoot{\small{ Raffo, Delgadillo, Alvarez - Primer Cuatrimestre de 2016 }} %fill with names
+% \paragraph y \subparagraph
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}

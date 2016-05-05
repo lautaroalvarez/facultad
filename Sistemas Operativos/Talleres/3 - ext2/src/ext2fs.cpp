@@ -301,13 +301,6 @@ unsigned int Ext2FS::get_block_address(struct Ext2FSInode * inode, unsigned int 
 		unsigned char block_buf_2[block_size];
 		read_block(block_buf[floor((block_number - (12 + cantidad_bloque)) / block_size)], block_buf_2);
 		return block_buf_2[(block_number - (12 + cantidad_bloque)) % block_size)];
-	} else if (block_number = 15) {
-		unsigned char block_buf[block_size];
-		read_block(inode->block[13], block_buf);
-		unsigned char block_buf_2[block_size];
-		read_block(block_buf[floor((block_number - (12 + (cantidad_bloque * cantidad_bloque))) / (block_size * block_size)], block_buf_2);
-		//ver la tercera indirección
-		return block_buf_2[(block_number - (12 + cantidad_bloque)) % block_size)];
 	}
 }
 

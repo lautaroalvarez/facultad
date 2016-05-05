@@ -48,11 +48,11 @@ int main(int argc, char ** argv)
 
 	test_hdd(&hdd);
 
-	Ext2FS * fs = new Ext2FS(hdd, 1);
+	//Ext2FS * fs = new Ext2FS(hdd, 1);
 
-	test_file_system(fs);
+	//test_file_system(fs);
 
-	test_block_groups(fs);
+	//test_block_groups(fs);
 
 	return 0;
 }

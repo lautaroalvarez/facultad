@@ -1,0 +1,16 @@
+0804842d <saludo>:
+ 804842d:	push   ebp
+ 804842e:	mov    ebp,esp
+ 8048430:	sub    esp,0x68
+ 8048433:	mov    DWORD PTR [esp],0x8048510
+ 804843a:	call   80482f0 <printf@plt>
+ 804843f:	lea    eax,[ebp-0x58]
+ 8048442:	mov    DWORD PTR [esp],eax
+ 8048445:	call   8048300 <gets@plt>
+ 804844a:	lea    eax,[ebp-0x58]
+ 804844d:	mov    DWORD PTR [esp+0x4],eax
+ 8048451:	mov    DWORD PTR [esp],0x804852d
+ 8048458:	call   80482f0 <printf@plt>
+ 804845d:	leave  
+ 804845e:	ret    
+

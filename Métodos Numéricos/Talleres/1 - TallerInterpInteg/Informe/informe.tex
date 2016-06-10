@@ -1,0 +1,120 @@
+\documentclass[a4paper,10pt]{article}
+% Idioma
+\usepackage[spanish]{babel}
+% La geometría del documento
+\usepackage[paper=a4paper, hmargin=1.5cm, bottom=1.5cm, top=1.5cm]{geometry}
+% Codificacion utf-8
+\usepackage[utf8]{inputenc}
+% Hyperlinking
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
+\usepackage{mathtools}
+
+% Fancyhdr
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+% Para el número de la última página
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\fancyhf{}
+%\lhead{Taller de Interpolación e Integración}
+%\rhead{Métodos Numéricos}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage /\pageref{LastPage}}
+\lfoot{\small{ Lautaro Leonel Alvarez - Lib Nro 268/14 }}
+% \paragraph y \subparagraph
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\usepackage{scrextend}
+
+\begin{document}
+
+
+\begin{addmargin}[8cm]{0cm}
+	\textbf{Taller de Interpolación e Integración} \\
+	Lautaro Leonel Alvarez \\
+	Libreta Nro 268/14 \\
+	Primer Cuatrimestre del 2016 \\
+\end{addmargin}
+
+
+
+\section{Ejercicio 1}
+\par Como tenemos que utilizar interpolación fragmentaria lineal vamos a utilizar polinomios de Lagrange de grado 1 para cada fragmento que une $f(t_i)$ con $f(t_{i+1})$ \forall $i=0..n-1$. \\
+\par Por la fórmula del error de los polinomios de Lagrange sabemos que: \\
+\begin{equation}
+	f^1(x) = P_L^1(x) + E_L^1(x)\ con\ E_L^1(x) = \frac{f^2(\xi(x))(x - x_j)(x - x_{j+1})}{2!}\ \forall i=0..n-1
+\end{equation}
+\par Queremos acotar:
+\begin{equation}
+	| E_L^1(x) | \leq 10^{-3} km
+\end{equation}
+\begin{equation}
+	\Leftrightarrow | \frac{f^2(\xi(x))(x - x_j)(x - x_{j+1})}{2!} | \leq 10^{-3} km
+\end{equation}
+\par Pero por el enunciado sabíamos que
+\begin{equation}
+	f^2(x) \leq 1000 \frac{km}{h} \forall x \in \mathds{R}
+\end{equation}
+\par Entonces
+\begin{equation}
+	| \frac{f^2(\xi(x))(x - x_j)(x - x_{j+1})}{2} | \leq | \frac{(1000 km)(x - x_j)(x - x_{j+1})}{2!} |
+\end{equation}
+\par Veamos que se cumpla
+\begin{equation}
+	| \frac{(1000 km)(x - x_j)(x - x_{j+1})}{2} | \leq 10^{-3} km
+\end{equation}
+\begin{equation}
+	\Leftrightarrow (1000 \frac{km}{h^2}) | \frac{(x - x_j)(x - x_{j+1})}{2} | \leq 10^{-3} km
+\end{equation}
+\begin{equation}
+	\Leftrightarrow | \frac{(x - x_j)(x - x_{j+1})}{2} | \leq \frac{10^{-3} km}{1000 \frac{km}{h^2}}
+\end{equation}
+\begin{equation}
+	\Leftrightarrow | \frac{(x - x_j)(x - x_{j+1})}{2} | \leq 10^{-6} h^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow |(x - x_j)(x - x_{j+1}) | \leq 20^{-6} h^2
+\end{equation}
+\par x es un punto entre $x_j$ y $x_{j+1}$, entonces $(x - x_j) \le \Delta t$ y $(x - x_{j+1}) \le \Delta t$.
+\par Entonces nos queda
+\begin{equation}
+	|(x - x_j)(x - x_{j+1}) | \leq | (\Delta t_i)^2 |
+\end{equation}
+\par Veamos entonces si
+\begin{equation}
+	| (\Delta t_i)^2 | \leq 20^{-6} h^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow  \Delta t_i \leq 0.000125 h
+\end{equation}
+
+\par Volviendo tenemos que
+\begin{equation}
+	\Delta t_i \leq 0.000125 h
+\end{equation}
+\begin{equation}
+	 \Rightarrow | \frac{(x - x_j)(x - x_{j+1})}{2} | \leq \frac{10^{-3} km}{1000 \frac{km}{h^2}}
+\end{equation}
+\begin{equation}
+	 \Rightarrow | \frac{(1000 km)(x - x_j)(x - x_{j+1})}{2} | \leq 10^{-3} km
+\end{equation}
+\par Entonces
+\begin{equation}
+	| E_L^1(x) | = | \frac{f^2(\xi(x))(x - x_j)(x - x_{j+1})}{2} | \leq | \frac{(1000 km)(x - x_j)(x - x_{j+1})}{2} | \leq 10^{-3} km
+\end{equation}
+\par Por lo tanto nos queda que
+\begin{equation}
+	\Delta t_i \leq 0.000125 h \Rightarrow | E_L^1(x) | \leq 10^{-3} km
+\end{equation}
+\\
+\par Sabemos entonces que si tomamos intervalos de tiempo iguales a 0.000125 horas vamos a estar respetando la cota de error impuesta.
+
+
+\section{Ejercicio 2}
+
+
+\end{document}

@@ -114,6 +114,57 @@
 \par Sabemos entonces que si tomamos intervalos de tiempo iguales a 0.000125 horas vamos a estar respetando la cota de error impuesta.
 
 
+\section{Ejercicio 1}
+\par Veamos
+\begin{equation}
+	E_L^1(x) =  \frac{f^2(\xi(x))(x - x_j)(x - x_{j+1})}{2!}
+\end{equation}
+\par Pero por el enunciado sabíamos que
+\begin{equation}
+	f^2(x) \leq (1000 \frac{km}{h^2}, 1000 \frac{km}{h^2}) \forall x \in \mathds{R}
+\end{equation}
+\par Entonces
+\begin{equation}
+	E_L^1(x) \leq \frac{(1000 \frac{km}{h^2}, 1000 \frac{km}{h^2})(x - x_j)(x - x_{j+1})}{2}
+\end{equation}
+\par x es un punto entre $x_j$ y $x_{j+1}$, entonces $(x - x_j) \le \Delta t$ y $(x - x_{j+1}) \le \Delta t$.
+\par Entonces nos queda
+\begin{equation}
+	(x - x_j)(x - x_{j+1}) \leq (\Delta t_i)^2
+\end{equation}
+\par Volviendo nos queda que
+\begin{equation}
+	E_L^1(x) \leq \frac{(1000 \frac{km}{h^2}, 1000 \frac{km}{h^2})(x - x_j)(x - x_{j+1})}{2} \leq \frac{(1000 \frac{km}{h^2}, 1000 \frac{km}{h^2})(\Delta t_i)^2}{2}
+\end{equation}
+\begin{equation}
+	E_L^1(x) \leq \frac{(1000 \frac{km}{h^2}, 1000 \frac{km}{h^2})(\Delta t_i)^2}{2}  = (\frac{1000 \frac{km}{h^2} * (\Delta t_i)^2}{2}, \frac{1000 \frac{km}{h^2} * (\Delta t_i)^2}{2})
+\end{equation}
+\par Queremos que el error sea menor que $10^{-3}km$. Para esto vamos a plantear la ecuación de la circunferencia con $radio = 10^{-3}km$ y veremos que valores de x e y nos sirven para manternernos dentro de la circunferencia.
+
+\begin{equation}
+	x^2 + y^2 \leq (10^{-3} km)^2
+\end{equation}
+\par Vamos a tomar como x e y los valores obtenidos de $E_L^1(t)$) y buscaremos que cumplan la ecuación planteada.
+\begin{equation}
+	(\frac{1000 \frac{km}{h^2} * (\Delta t_i)^2}{2})^2 + (\frac{1000 \frac{km}{h^2} * (\Delta t_i)^2}{2})^2 \leq (10^{-3} km)^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow \frac{1000000 \frac{km^2}{h^4} * (\Delta t_i)^4}{4} + \frac{1000000 \frac{km^2}{h^4} * (\Delta t_i)^4}{4} \leq 10^{-6} km^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow \frac{1000000 \frac{km^2}{h^4} * (\Delta t_i)^4}{2} \leq 10^{-6} km^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow (\Delta t_i)^4 \leq \frac{10^{-6} km^2 * 2}{1000000 \frac{km^2}{h^4}}
+\end{equation}
+\begin{equation}
+	\Leftrightarrow (\Delta t_i)^4 \leq 20^{-12} h^4
+\end{equation}
+\begin{equation}
+	\Leftrightarrow | \Delta t_i | \leq 0.001 h
+\end{equation}
+\par Sabemos entonces que si tomamos intervalos \Delta t menores o iguale que 0.001 h estaremos respetando la cota de error impuesta. Tomaremos entonces \Delta t = 0.001 h para tener la cota superior.
+
 \section{Ejercicio 2}
 
 

@@ -1,16 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.8.27)  24 JUN 2016 02:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.22)  24 JUN 2016 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **informe.tex
 (./informe.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -24,51 +23,45 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/spanish.ldf
-Language: spanish.ldf 2011/10/06 v5.0k Spanish support from the babel system
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `Spanish'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@spanish = a dialect from \language0
-\es@datefmt=\count88
 \es@quottoks=\toks14
-\es@quotdepth=\count89
-Package babel Info: Making " an active character on input line 496.
-Package babel Info: Making . an active character on input line 599.
-Package babel Info: Making < an active character on input line 644.
-Package babel Info: Making > an active character on input line 644.
-)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+\es@quotdepth=\count88
+Package babel Info: Making " an active character on input line 516.
+Package babel Info: Making . an active character on input line 617.
+Package babel Info: Making < an active character on input line 662.
+Package babel Info: Making > an active character on input line 662.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count90
-\Gm@cntv=\count91
-\c@Gm@tempcnt=\count92
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
 \Gm@bindingoffset=\dimen104
 \Gm@wd@mp=\dimen105
 \Gm@odd@mp=\dimen106
@@ -79,20 +72,20 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks16
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -241,8 +234,8 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -272,8 +265,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -296,14 +289,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -342,157 +335,163 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen112
-\Hy@linkcounter=\count93
-\Hy@pagecounter=\count94
+\Hy@linkcounter=\count92
+\Hy@pagecounter=\count93
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count95
+\Hy@SavedSpaceFactor=\count94
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
-Package hyperref Info: Hyper figures OFF on input line 4062.
-Package hyperref Info: Link nesting OFF on input line 4067.
-Package hyperref Info: Hyper index ON on input line 4070.
-Package hyperref Info: Plain pages OFF on input line 4077.
-Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4300.
-\c@Hy@tempcnt=\count96
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count95
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4653.
-\Fld@menulength=\count97
-\Field@Width=\dimen113
-\Fld@charsize=\dimen114
-Package hyperref Info: Hyper figures OFF on input line 5773.
-Package hyperref Info: Link nesting OFF on input line 5778.
-Package hyperref Info: Hyper index ON on input line 5781.
-Package hyperref Info: backreferencing OFF on input line 5788.
-Package hyperref Info: Link coloring ON on input line 5791.
-Package hyperref Info: Link coloring with OCG OFF on input line 5798.
-Package hyperref Info: PDF/A mode OFF on input line 5803.
-LaTeX Info: Redefining \ref on input line 5843.
-LaTeX Info: Redefining \pageref on input line 5847.
-\Hy@abspage=\count98
-\c@Item=\count99
-\c@Hfootnote=\count100
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen113
+\Fld@menulength=\count96
+\Field@Width=\dimen114
+\Fld@charsize=\dimen115
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
-\Fld@listcount=\count101
-\c@bookmark@seq@number=\count102
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count100
+\c@bookmark@seq@number=\count101
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip43
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
-Package: mathtools 2012/04/24 v1.12 mathematical typesetting tools
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count103
-\calc@Bcount=\count104
-\calc@Adimen=\dimen115
-\calc@Bdimen=\dimen116
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count102
+\calc@Bcount=\count103
+\calc@Adimen=\dimen116
+\calc@Bdimen=\dimen117
 \calc@Askip=\skip44
 \calc@Bskip=\skip45
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count105
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count104
 \calc@Cskip=\skip46
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
-\ex@=\dimen117
+\ex@=\dimen118
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen118
+\pmbraise@=\dimen119
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count106
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count107
-\leftroot@=\count108
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count109
-\DOTSCASE@=\count110
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+\inf@bad=\count105
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count106
+\leftroot@=\count107
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count108
+\DOTSCASE@=\count109
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen119
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count111
-\c@MaxMatrixCols=\count112
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
 \dotsspace@=\muskip11
-\c@parentequation=\count113
-\dspbrk@lvl=\count114
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
 \tag@help=\toks20
-\row@=\count115
-\column@=\count116
-\maxfields@=\count117
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
 \andhelp@=\toks21
-\eqnshift@=\dimen120
-\alignsep@=\dimen121
-\tagshift@=\dimen122
-\tagwidth@=\dimen123
-\totwidth@=\dimen124
-\lineht@=\dimen125
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
 \@envbody=\toks22
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-\g_MT_multlinerow_int=\count118
-\l_MT_multwidth_dim=\dimen126
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count117
+\l_MT_multwidth_dim=\dimen127
 \origjot=\skip50
-\l_MT_shortvdotswithinadjustabove_dim=\dimen127
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen128
-\l_MT_above_intertext_dim=\dimen129
-\l_MT_below_intertext_dim=\dimen130
-\l_MT_above_shortintertext_dim=\dimen131
-\l_MT_below_shortintertext_dim=\dimen132
+\l_MT_shortvdotswithinadjustabove_dim=\dimen128
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen129
+\l_MT_above_intertext_sep=\dimen130
+\l_MT_below_intertext_sep=\dimen131
+\l_MT_above_shortintertext_sep=\dimen132
+\l_MT_below_shortintertext_sep=\dimen133
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip51
 \f@ncyO@elh=\skip52
 \f@ncyO@erh=\skip53
@@ -503,37 +502,37 @@ LaTeX Info: Redefining \] on input line 2667.
 \f@ncyO@olf=\skip58
 \f@ncyO@orf=\skip59
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count119
+\FV@CodeLineNo=\count118
 \FV@InFile=\read1
 \FV@TabBox=\box28
-\c@FancyVerbLine=\count120
-\FV@StepNumber=\count121
+\c@FancyVerbLine=\count119
+\FV@StepNumber=\count120
 \FV@OutFile=\write3
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
-Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrextend.sty
-Package: scrextend 2012/05/15 v3.11 KOMA-Script KOMA-Script package (extend oth
-er classes with features of KOMA-Script classes)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2014/10/28 v3.14 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2012/05/15 v3.11 KOMA-Script package (KOMA-Script-dependent b
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2014/10/28 v3.14 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2012/05/15 v3.11 KOMA-Script package (KOMA-Script-independent 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2014/10/28 v3.14 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2011/03/09 v3.09 KOMA-Script package (loading files)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2014/10/28 v3.14 KOMA-Script package (loading files)
 
-Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+Package scrlfile, 2014/10/28 v3.14 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 )))
@@ -541,47 +540,50 @@ Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
 LaTeX Warning: Command \@footnotemark  has changed.
                Check if current package is valid.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip60
 \subfigcapskip=\skip61
-\subfigcaptopadj=\dimen133
+\subfigcaptopadj=\dimen134
 \subfigbottomskip=\skip62
-\subfigcapmargin=\dimen134
+\subfigcapmargin=\dimen135
 \subfiglabelskip=\skip63
-\c@subfigure=\count122
-\c@lofdepth=\count123
-\c@subtable=\count124
-\c@lotdepth=\count125
+\c@subfigure=\count121
+\c@lofdepth=\count122
+\c@subtable=\count123
+\c@lotdepth=\count124
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip64
 \subfig@bottom=\skip65
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
-\captionmargin=\dimen135
-\captionmargin@=\dimen136
-\captionwidth=\dimen137
-\caption@indent=\dimen138
-\caption@parindent=\dimen139
-\caption@hangindent=\dimen140
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen136
+\captionmargin@=\dimen137
+\captionwidth=\dimen138
+\caption@tempdima=\dimen139
+\caption@indent=\dimen140
+\caption@parindent=\dimen141
+\caption@hangindent=\dimen142
 )
-\c@ContinuedFloat=\count126
+\c@ContinuedFloat=\count125
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
-) (./informe.aux
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
+)
+(./informe.aux
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `informe.aux'.
 
@@ -601,6 +603,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Info: Redefining \. on input line 36.
 LaTeX Info: Redefining \% on input line 36.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -636,40 +639,40 @@ LaTeX Info: Redefining \% on input line 36.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box29
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 137.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count127
+\Gread@gobject=\count126
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
-\scratchdimen=\dimen141
+\scratchcounter=\count127
+\scratchdimen=\dimen143
 \scratchbox=\box30
-\nofMPsegments=\count129
-\nofMParguments=\count130
+\nofMPsegments=\count128
+\nofMParguments=\count129
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count131
-\MPscratchDim=\dimen142
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen144
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks25
 )))
 Package hyperref Info: Link coloring ON on input line 36.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count133
 )
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
@@ -680,24 +683,24 @@ LaTeX Info: Redefining \nameref on input line 36.
 \openout4 = `informe.out'.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -705,12 +708,12 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\Gin@req@height=\dimen143
-\Gin@req@width=\dimen144
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -726,6 +729,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
  []
 
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 48.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 48.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 48.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 48.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 48.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 48.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 101.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 101.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 101.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 101.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 101.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 101.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 105.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 105.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 105.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 105.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 105.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 105.
 <imagenes/Kane_Real.png, id=52, 897.3525pt x 531.9875pt>
 File: imagenes/Kane_Real.png Graphic file (type png)
 
@@ -736,9 +775,33 @@ Package pdftex.def Info: imagenes/Kane_Real.png used on input line 111.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 114.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 114.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <imagenes/Kane_Splines.png, id=83, 908.39375pt x 528.97626pt>
 File: imagenes/Kane_Splines.png Graphic file (type png)
 
@@ -770,6 +833,30 @@ Package pdftex.def Info: imagenes/Mareado_Real.png used on input line 141.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 144.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 144.
 [2 <./imagenes/Kane_Real.png> <./imagenes/Kane_Splines.png>]
 <imagenes/Mareado_Lineal.png, id=92, 900.36375pt x 527.9725pt>
 File: imagenes/Mareado_Lineal.png Graphic file (type png)
@@ -777,12 +864,220 @@ File: imagenes/Mareado_Lineal.png Graphic file (type png)
 <use imagenes/Mareado_Lineal.png>
 Package pdftex.def Info: imagenes/Mareado_Lineal.png used on input line 147.
 (pdftex.def)             Requested size: 384.11221pt x 225.24332pt.
- [3 <./imagenes/Mareado_Real.png> <./imagenes/Mareado_Lineal.png>] [4] [5]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 163.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 163.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 163.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 163.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 163.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 163.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 164.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 164.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 164.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 164.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 164.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 164.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 170.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 170.
+ [3 <./imagenes/Mareado_Real.png> <./imagenes/Mareado_Lineal.png>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 246.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 246.
+ [4]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 249.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 249.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 249.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 249.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 249.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 249.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 314.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 314.
+ [5]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 341.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 341.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 341.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 341.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 341.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 341.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 355.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 355.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 355.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 355.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 355.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 355.
+
 Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 369.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 369.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 369.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 369.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 369.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 369.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 370.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 370.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 370.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 370.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 370.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 370.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 374.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 374.
 [6]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 390.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 390.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 390.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 390.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 390.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 390.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 427.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 427.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 427.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 427.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 427.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 427.
+
 Overfull \hbox (36.4536pt too wide) detected at line 431
 \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] \
 OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 3 + [] \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10
@@ -790,44 +1085,105 @@ OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 3 + [] \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10
 mr/m/n/10 7
  []
 
-
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 442.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 442.
+[7] 
 AED: lastpage setting LastPage
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 455.
+[8]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 455.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 455.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 455.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 455.
  (./informe.aux
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 455.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 455.
 Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: 176249A6FDD33882990C2006C98626B3;661.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 443.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 455.
  ) 
 Here is how much of TeX's memory you used:
- 9579 strings out of 495059
- 142915 string characters out of 3182030
- 272900 words of memory out of 3000000
- 12551 multiletter control sequences out of 15000+200000
- 5911 words of font info for 22 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 48i,16n,46p,439b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on informe.pdf (7 pages, 188811 bytes).
+ 10040 strings out of 493109
+ 151522 string characters out of 6135009
+ 284449 words of memory out of 5000000
+ 13285 multiletter control sequences out of 15000+600000
+ 5911 words of font info for 22 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,16n,46p,439b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on informe.pdf (8 pages, 190341 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 103 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

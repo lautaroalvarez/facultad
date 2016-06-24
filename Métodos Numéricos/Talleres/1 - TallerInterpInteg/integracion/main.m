@@ -4,8 +4,8 @@ format long;
 
 % Para integrar se usan los puntos {x_0, ..., x_n}. n determina la cantidad
 % de puntos. x_0 = 0. x_n = 1.
-n_trapecios = _____________;
-n_simpson = ___________;
+n_trapecios = 248;
+n_simpson = 18;
 
 % Función a integrar
 f = @(x) exp(-x.^2);
@@ -38,8 +38,8 @@ int_simpson = simpson(F,h)
 
 %% Resolver integral usando Matlab
 
-int_matlab = integral(f,0,1)
-
+%int_matlab = integral(f,0,1)
+[int_matlab,ierror,nfneval] = quad(f,0,1)
 
 %% Comparación
 

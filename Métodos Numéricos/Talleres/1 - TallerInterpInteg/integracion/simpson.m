@@ -11,6 +11,6 @@ function res=simpson(F, h)
     n = length(F) - 1;
     res = 0;
     for j=1:n/2,
-       res = res + ________________; 
+       res = res + (((F((2*j)-1) + 4 * F(2*j) + F((2*j)+1)) / 3) * h); 
     end
 end

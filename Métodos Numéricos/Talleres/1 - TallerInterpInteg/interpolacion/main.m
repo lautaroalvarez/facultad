@@ -6,18 +6,19 @@ presicionInfinita = 0.0001; % decímetros (10^{-4} kilómetros)
 % Valor de dt (delta t) para tomar las muestras del ciudadano (intervalo de tiempo
 % entre todos los pares de fotografías).
 %dt = 0.005; % en horas
+%dt = 0.001;
+dt = 0.005695;
 
 % Conversión a minutos
-%dt = dt * 60;
-dt = 1;
+dt = dt * 60;
 
 %% Ciudadanos
-%ciudadano = @ciudadanoMareado;
-ciudadano = @ciudadanoKane;
+ciudadano = @ciudadanoMareado;
+%ciudadano = @ciudadanoKane;
 
 %% Método de interpolación
-%interpolacion = @interpolacionFragmentariaLineal;
-interpolacion = @interpolacionSplines;
+interpolacion = @interpolacionFragmentariaLineal;
+%interpolacion = @interpolacionSplines;
 
 %% Obtención de muestras - Interpolación.
 
@@ -32,8 +33,8 @@ caminataInterpolada = interpolarCaminataCon(interpolacion, caminataSample, presi
 caminataPresicionInf = caminataDe(ciudadano, presicionInfinita);
 
 %% Gráficos (para entender mejor qué está pasando)
-graficarCaminata(caminataPresicionInf, 'Caminata Real');
-graficarCaminata(caminataInterpolada, 'Caminata Interpolada');
+%graficarCaminata(caminataPresicionInf, 'Caminata Real');
+%graficarCaminata(caminataInterpolada, 'Caminata Interpolada');
 
 %% Máximo error de interpolacón en X y en Y.
 maxErrorX = calcularMaximoError(caminataInterpolada(:,2), caminataPresicionInf(:,2)); % en metros
@@ -41,3 +42,6 @@ maxErrorY = calcularMaximoError(caminataInterpolada(:,3), caminataPresicionInf(:
 
 maxErrorX = maxErrorX / 1000  % en km
 maxErrorY = maxErrorY / 1000  % en km
+
+[ sqrt(maxErrorX^2 + maxErrorY^2) < 10^(-3) ]
+[ sqrt(maxErrorX^2 + maxErrorY^2) ]

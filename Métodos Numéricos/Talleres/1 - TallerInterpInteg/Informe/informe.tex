@@ -48,11 +48,11 @@
 \section{Ejercicio 1}
 \par Veamos
 \begin{equation}
-	E_L^1(x) =  \frac{f^2(\xi(x))(x - x_j)(x - x_{j+1})}{2!}
+	E_L^1(x) =  \frac{f^{(2)}(\xi(x))(x - x_j)(x - x_{j+1})}{2!}
 \end{equation}
 \par Pero por el enunciado sabíamos que
 \begin{equation}
-	f^2(x) \leq (1000 \frac{km}{h^2}, 1000 \frac{km}{h^2}) \forall x \in {\rm I\!R}
+	f^{(2)}(x) \leq (1000 \frac{km}{h^2}, 1000 \frac{km}{h^2}) \forall x \in {\rm I\!R}
 \end{equation}
 \par Entonces
 \begin{equation}
@@ -99,8 +99,39 @@
 
 
 \section{Ejercicio 3}
-No se bien como es la onda. La cota no es muy ajustada, da 3.1722e-5 para x y 1.3878e-20 para y. Pero aplicando en sqrt(x2 + y2) <= 10-3km me queda 3.1722e-5.
-
+\par Corremos el algoritmo de interpolación lineal para el ciudadano Mareado tomando $\Delta t$ = 0.001 y obtenemos los siguientes errores:
+\begin{itemize}
+	\item \textbf{Máximo error en X:} $3.1722 * 10^{-5}$
+	\item \textbf{Máximo error en Y:} $1.3878 * 10^{-20}$
+\end{itemize}
+\par Veamos si cumple la cota pedida:
+\begin{equation}
+	errorX^2 + errorY^2 \leq (10^{-3})^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow (3.1722 * 10^{-5})^2 + (1.3878 * 10^{-20})^2 \leq (10^{-3})^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow 3.1722*10^{-5} \leq 10^{-3}
+\end{equation}
+\par Esto es cierto, cumple la cota pedida. Ahora vamos a ir aumentando $\Delta t$ para acercarnos a un valor óptimo.
+\par Luego de ir aumentando el $\Delta t$ llegamos a un valor de 0.005695. No vamos continuar aumentando, ya que al ser un valor real podríamos no llegar nunca al valor óptimo buscado donde la distancia sea $10^{-3}$. Veamos los resultados obtenidos con el valor $\Delta t$ = 0.005695.
+\begin{itemize}
+	\item \textbf{Máximo error en X:} $9.9997 * 10^{-4}$
+	\item \textbf{Máximo error en Y:} $7.1054 * 10^{-18}$
+\end{itemize}
+\par Veamos si cumple la cota pedida:
+\begin{equation}
+	errorX^2 + errorY^2 \leq (10^{-3})^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow (9.9997 * 10^{-4})^2 + (7.1054 * 10^{-18})^2 \leq (10^{-3})^2
+\end{equation}
+\begin{equation}
+	\Leftrightarrow 9.9997*10^{-4} \leq 10^{-3}
+\end{equation}
+\par Como vemos cumple la cota pedida. Pero también podemos observar que el valor obtenido ($9.9997*10^{-4}$) es mucho mas cercano a la cota ($10^{-3}$) comparado con el valor obtenido del $\Delta t$ inicial ($3.1722*10^{-5}$).
+\par Pudimos ver que el valor calculado en el punto anterior cumple, pero al analizar este caso en particular pudimos ir aumentando el valor manteniéndonos dentro de la cota. Esto no nos asegura que podamos cambiar nuestro valor por uno mas alto, porque para otro caso, tal vez este no cumpla.
 
 \section{Ejercicio 4}
 \par Veamos los resultados de correr el ciudadano Kane:

@@ -25,26 +25,26 @@ e = 1;
 while (e > E) & (t < T)
 	e = 0;
 	for i = 1:4
-		disp('--------------------');
+		%disp('--------------------');
 		res = x(i,:) * w;
-		disp('--res1');
-		disp(res);
-		if res > 0
-			res = 1;
-		else
-			res = -1;
-		end
-		disp('--res2');
-		disp(res);
+		%disp('--res1');
+		%disp(res);
+		%if res > 0
+		%	res = 1;
+		%else
+		%	res = -1;
+		%end
+		%disp('--res2');
+		%disp(res);
 		err = y(i) - res;
-		disp('--err');
-		disp(err);
-		dw = v * x(i,:)' * err;
-		disp('--dw');
-		disp(dw);
+		%disp('--err');
+		%disp(err);
+		dw = v * err * x(i,:)';
+		%disp('--dw');
+		%disp(dw);
 		w = w + dw;
-		disp('--w');
-		disp(w);
+		%disp('--w');
+		%disp(w);
 		e = e + err^2;
 	end
 	%e = 1/2 * e;

@@ -79,9 +79,3 @@ for i = 1 : length(y)
 		errores++;
 	end
 end
-
-%if errores > 0
-%	disp('Hubo ' + errores + ' errores');
-%else
-%	disp('OK');
-%end;

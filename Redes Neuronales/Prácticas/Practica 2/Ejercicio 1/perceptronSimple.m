@@ -1,4 +1,4 @@
-function [w, b, errores] = perceptronSimple(x, y, v, T, E)
+function [w, errores] = perceptronSimple(x, y, v, T, E)
 
 if nargin < 2
 	disp('Datos de entrada de la función:    ( *opcional )');
@@ -25,22 +25,22 @@ if nargin < 5
 	E = 0.01;
 end
 
+% amplio la entrada x poniendo un -1 al final para el umbral
+x = [x repmat(-1,length(x),1)];
+
 % w -> unidades de salida (inicializan random)
 %----falta hacer que arranquen random
-w = rand(2,1) * 2 - 1;
-
-% b -> desplazamiento de la recta ("")
-b = 0;
+w = rand(length(x(1)),1) * 2 - 1;
 
 % inicializamos variables
 t = 0;
-e = 1;
+e = E + 1;
 
 while (e > E) & (t < T)
 	e = 0;
-	for i = 1:4
+	for i = 1 : length(x)
 		%--multiplicamos
-		res = x(i,:) * w + b;
+		res = x(i,:) * w;
 		%--aplicamos la función de activación
 		if res > 0
 			res = 1;
@@ -53,10 +53,6 @@ while (e > E) & (t < T)
 		dw = v * err * x(i,:)';
 		%--aplicamos aprendizaje
 		w = w + dw;
-		%--calculamos valor de desplazamiento
-		%bw = err * v;
-		%--desplazamos la recta según el error
-		b = b + v * err;
 		%--acumulamos el error
 		e = e + err^2;
 	end
@@ -69,7 +65,7 @@ end
 errores = 0;
 
 for i = 1 : length(y)
-	res = x(i,:) * w + b;
+	res = x(i,:) * w;
 	if (res > 0)
 		res = 1;
 	else 

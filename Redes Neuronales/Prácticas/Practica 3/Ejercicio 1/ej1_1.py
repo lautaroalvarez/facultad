@@ -1,5 +1,5 @@
 import numpy as np
-import math
+import math, csv
 
 
 
@@ -102,29 +102,32 @@ def adaptacion():
 		delta_capas[i] = 0
 	return
 
-def training():
-	error = 0
+def training(csv_salida):
 	cant_rep = 20000
 	h = 0
-	er = 2
-	while h < cant_rep and er > ERR:
-		y = activacion(x)
-		er = correccion(y, z)
-		print er
-		error = error + er
-		adaptacion()
-		#print error
-	return er, error
+	error = 2
+	while h < cant_rep and error > ERR:
+		error = 0
+		for ei in xrange(0, len(x)):
+			y = activacion(x[ei])
+			error = error + correccion(y, z[ei])
+			adaptacion()
+		if h % 3 == 0:
+			csv_salida.writerow([h, error])
+			print h, error
+		h = h + 1
+	return error
 
+csv_salida = csv.writer(open("ej1_1.csv", "wb"))
 
 #---ENTRADA
-x = np.array([1, 0, -1])
-z = np.array([1, 0, 0])
+x = np.array([[0, 0, -1], [0, 1, -1], [1, 0, -1], [1, 1, -1]])
+z = np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0]])
 
 #---PARAMETROS
 coef_aprendizaje = 0.1
 cant_capas = 2
-ERR = 0.002
+ERR = 0.02
 
 capas = np.random.randn(cant_capas+1, 3, 3)
 delta_capas = np.zeros((cant_capas+1))
@@ -141,19 +144,20 @@ for k in xrange(0, cant_capas+1):
 		for i in xrange(0, 3):
 			capas[k][i][j] = 0
 
-ep, ea = training()
+err = training(csv_salida)
 
 print "-----------------------"
 print "---FIN ENTRENAMIENTO---"
-print "error parcial:"
-print ep
-print "error acumulado:"
-print ea
+print "error:"
+print err
 
-resp = activacion(x)
-print "---SALIDA---"
-print resp[2][0]
-if ((resp[2][0] - z[0])**2 < ERR):
-	print "ENTRENAMIENTO OK"
+cant_errores = 0
+for i in xrange(0, len(x)):
+	resp = activacion(x[i])
+	if ((resp[2][0] - z[i][0])**2 >= ERR):
+		cant_errores = cant_errores + 1
+if cant_errores == 0:
+	print "ENTRENAMIENTO OK!"
 else:
-	print "ENTRENAMIENTO MAL"
+	print "ERRORES:"
+	print cant_errores

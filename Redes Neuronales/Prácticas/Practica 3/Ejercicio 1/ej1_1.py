@@ -60,6 +60,8 @@ def activacion(entrada):
 def correccion(y, z):
 	#---Calcula y acumula errores dw
 	E = z - y[cant_capas]
+	print "-----E------"
+	print E
 	e = np.sum(np.power(E,2))
 	for i in xrange(cant_capas, 0, -1):
 		#print "--------------IIII-----------"
@@ -111,7 +113,11 @@ def training(csv_salida):
 		for ei in xrange(0, len(x)):
 			y = activacion(x[ei])
 			error = error + correccion(y, z[ei])
-			adaptacion()
+		#print "-----h-----"
+		#print h
+		#print "error"
+		#print error
+		adaptacion()
 		if h % 3 == 0:
 			csv_salida.writerow([h, error])
 			print h, error
@@ -125,9 +131,9 @@ x = np.array([[0, 0, -1], [0, 1, -1], [1, 0, -1], [1, 1, -1]])
 z = np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0]])
 
 #---PARAMETROS
-coef_aprendizaje = 0.1
+coef_aprendizaje = 0.01
 cant_capas = 2
-ERR = 0.02
+ERR = 0.2
 
 capas = np.random.randn(cant_capas+1, 3, 3)
 delta_capas = np.zeros((cant_capas+1))

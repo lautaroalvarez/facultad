@@ -1,0 +1,1 @@
+Tomadas de https://turing.cs.hbg.psu.edu/txn131/graphcoloring.html
